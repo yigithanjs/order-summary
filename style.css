@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+/* Primary */
+--PaleBlue: hsl(225, 100%, 94%);
+--BrightBlue: hsl(245, 75%, 52%);
+
+/* Neutral */
+--VeryPaleBlue: hsl(225, 100%, 98%);
+--DesaturatedBlue: hsl(224, 23%, 55%);
+--DarkBlue: hsl(223, 47%, 23%);
+}
+
+body{
+    font-family: "Red Hat Display", sans-serif;
+    background-color: var(--PaleBlue);
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+main{
+    width: 315px;
+    background-color: var(--VeryPaleBlue);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main header img{
+    width: 315px;
+    border-radius: 12px 12px 0 0;
+}
+
+main #param{
+    margin: 25px 0;
+}
+
+main #param h1{
+    color: var(--DarkBlue);
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+main #param p{
+    color: var(--DesaturatedBlue);
+    font-weight: 500;
+    padding: 0 26px;
+    line-height: 26px;
+}
+
+main #price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsla(225, 100%, 94%, 0.603);
+    width: 280px;
+    border-radius: 12px;
+    padding: 15px 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+main #price1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 5px;
+}
+
+main #pricingPlan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main #price1 img{
+    width: 50px;
+    margin-right: 15px;
+}
+
+main #pricingPlan h2{
+    font-size: 14px;
+    font-weight: 900;
+    color: var(--DarkBlue);
+}
+
+main #pricingPlan p{
+    font-size: 14px;
+    color: var(--DesaturatedBlue);
+    font-weight: 500;
+}
+
+main a{
+    font-size: 14px;
+    transition: .2s;
+}
+
+main a:hover{
+    color: hsl(266, 75%, 52%);
+}
+
+main footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+main footer button:first-child{
+    border: none;
+    border-radius: 12px;
+    color: var(--VeryPaleBlue);
+    background-color: var(--BrightBlue);
+    width: 100%;
+    padding: 15px 0;
+    font-weight: 700;
+    font-size: 15.5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px var(--DesaturatedBlue);
+    transition: .2s
+}
+
+main footer button:first-child:hover{
+    background-color: hsl(266, 75%, 52%);
+}
+
+main footer button:last-child{
+    border: none;
+    background: none;
+    color: var(--DesaturatedBlue);
+    font-weight: 900;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px 0;
+    transition: .2s;
+}
+
+main footer button:last-child:hover{
+    color: var(--DarkBlue);
+}
+
+@media only screen and (min-width: 376px){
+    body{
+        background-image: url(/images/pattern-background-desktop.svg);
+        background-size: contain;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    main{
+        width: 425px;
+    }
+    
+    main header img{
+        width: 425px;
+    }
+    
+    main #param{
+        margin: 30px 0;
+    }
+    
+    main #param h1{
+        margin-bottom: 20px;
+        font-size: 26px
+    }
+    
+    main #param p{
+        font-size: 16.5px;
+        line-height: 28px;
+    }
+    
+    main #price{
+        width: 350px;
+        margin-bottom: 30px;
+    }
+    
+    main #price1 img{
+        width: 54px;
+    }
+    
+    main #pricingPlan h2{
+        font-size: 15px;
+    }
+    
+    main #pricingPlan p{
+        font-size: 15px;
+    }
+    
+    main a{
+        font-size: 15px;
+    }
+    
+    main footer{
+        padding: 0 35px;
+    }
+    
+    main footer button:first-child{
+        padding: 16px 0;
+        margin-bottom: 6px;
+    }
+    
+    main footer button:last-child{
+        margin-bottom: 30px;
+        padding: 16px 0;
+    }
+
+}
