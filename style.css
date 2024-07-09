@@ -20,7 +20,7 @@
 body{
     font-family: "Red Hat Display", sans-serif;
     background-color: var(--PaleBlue);
-    background-image: url(/images/pattern-background-mobile.svg);
+    background-image: url(pattern-background-mobile.svg);
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -163,7 +163,7 @@ main footer button:last-child:hover{
 
 @media only screen and (min-width: 376px){
     body{
-        background-image: url(/images/pattern-background-desktop.svg);
+        background-image: url(pattern-background-desktop.svg);
         background-size: contain;
     }
 }
